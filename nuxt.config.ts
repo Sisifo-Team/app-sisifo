@@ -32,15 +32,7 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
 
-  modules: [
-    (_options, nuxt) => {
-      nuxt.hooks.hook("vite:extendConfig", (config) => {
-        // @ts-expect-error
-        config.plugins.push(vuetify({ autoImport: true }));
-      });
-    },
-    "@vite-pwa/nuxt",
-  ],
+  modules: ["@vite-pwa/nuxt"],
 
   vite: {
     vue: {

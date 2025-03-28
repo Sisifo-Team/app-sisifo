@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     shim: false,
   },
 
-  ssr: false,
+  ssr: true,
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
 

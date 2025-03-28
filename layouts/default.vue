@@ -1,10 +1,10 @@
 <script setup lang="ts">
-//import AppBarUser from "~/components/global/AppBarUser.vue";
-//<AppBarUser />
+import Appbar from "~/components/global/Appbar.vue";
 </script>
 <template>
   <v-app>
     <v-main>
+      <Appbar />
       <NuxtPage />
     </v-main>
   </v-app>

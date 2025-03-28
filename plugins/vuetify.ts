@@ -26,6 +26,7 @@ export default defineNuxtPlugin((app) => {
             info: "#f0a202",
             success: "#44af69",
             warning: "#FB8C00",
+            shadowKeyAmbientOpacity: "#2660a4",
           },
         },
       },

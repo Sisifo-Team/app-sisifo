@@ -1,8 +1,6 @@
-/* @forward "vuetify/settings"
+@forward "vuetify/settings"
   with(
-    $application-background: rgba(255, 255, 255, 0),
-    $rounded: (
-      "xl": 64px,
-    )
+    $shadow-key-umbra-opacity: rgba(38, 96, 164, 0.2),
+    $shadow-key-penumbra-opacity: rgba(38, 96, 164, 0.14),
+    $shadow-key-ambient-opacity: rgba(38, 96, 164, 0.12)
   );
- */

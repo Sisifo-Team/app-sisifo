@@ -11,7 +11,7 @@ export default defineNuxtPlugin((app) => {
     components,
     directives,
     display: {
-      mobileBreakpoint: "sm",
+      mobileBreakpoint: "md",
     },
     theme: {
       defaultTheme: "sisifo",

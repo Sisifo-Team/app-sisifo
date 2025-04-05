@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useAppStore } from "~/store/app"
+import { useDisplay } from "vuetify"
+
 const navList = [
   {
     title: "Dashboard",
@@ -9,6 +12,14 @@ const navList = [
     to: "/containers",
   },
 ];
+
+const appStore = useAppStore();
+const { mobile } = useDisplay();
+
+function openNavBar() {
+  appStore.isNavBarOpen = true;
+}
+
 </script>
 
 <template>
@@ -16,6 +27,8 @@ const navList = [
     <template #prepend>
       <v-img src="/logo.png" height="50" width="50" class="nav-logo" />
     </template>
+
+    <v-btn v-if="mobile" icon="mdi-menu" @click="openNavBar" color="primary" class="text-h6"/>
 
     <template v-if="$vuetify.display.mdAndUp" #append>
       <v-list class="d-flex text-primary">

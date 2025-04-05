@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
 
-  modules: ["@vite-pwa/nuxt"],
+  modules: ["@pinia/nuxt", "@vite-pwa/nuxt"],
 
   vite: {
     vue: {
